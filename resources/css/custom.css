@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Custom Stylesheet - Web Ujikom Pegawai
+   Lokasi: resources/css/custom.css
+   Anda dapat dengan mudah menambahkan atau mengubah styling di sini.
+   ========================================================================== */
+
+/* 1. Hilangkan judul halaman besar (Heading) yang ganda di Dashboard dan Pegawai */
+.fi-header-heading {
+    display: none !important;
+}
+
+/* 2. Hilangkan wadah header kosong pada Dashboard agar tampilan grafik rapat dan rapi */
+.fi-header:not(:has(.fi-header-actions-ctn)):not(:has(nav)) {
+    display: none !important;
+}
+
+/* 3. Penyesuaian jarak topbar & navigasi (opsional) */
+.fi-topbar {
+    transition: all 0.2s ease-in-out;
+}
+

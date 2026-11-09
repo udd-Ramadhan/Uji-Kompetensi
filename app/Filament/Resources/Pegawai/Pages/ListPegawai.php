@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Filament\Resources\Pegawai\Pages;
+
+use App\Filament\Resources\Pegawai\PegawaiResource;
+use Filament\Actions\CreateAction;
+use Filament\Resources\Pages\ListRecords;
+
+class ListPegawai extends ListRecords
+{
+    protected static string $resource = PegawaiResource::class;
+
+    protected static ?string $title = 'Daftar Pegawai';
+
+    protected static ?string $breadcrumb = 'Daftar';
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            CreateAction::make()
+                ->label('Tambah Pegawai'),
+        ];
+    }
+}
